@@ -13,3 +13,12 @@ function showMessage(from, text) {
 let email = "anna@m.ru";
 showMessage("Аня", "Привет!");
 showMessage("Аня", "Как дела?");
+
+function showMessage1(from, text) {
+  emailA += "+"; // eсли внутри мы измеим переменную, то и в Глобальной зоне буде +, а не почта
+  let msg1 = from + " " + email + ": " + text;
+  console.log(msg1);
+}
+let emailA = "anna@m.ru";
+showMessage1("Аня", "Привет!");
+showMessage1("Аня", "Как дела?");
